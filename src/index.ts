@@ -7,7 +7,7 @@ export default class SlackBot<T extends {[key: string]: string}> {
         this._aliases = aliases;
     }
 
-    async send(alias: keyof T, object:Object){
+    async send<M>(alias: keyof T, object:M){
         return axios.post(this._aliases[alias], object)
     }
 
@@ -16,7 +16,7 @@ export default class SlackBot<T extends {[key: string]: string}> {
     }
 
     createBot = (alias: keyof T) => {
-        const send = async(object:Object) => this.send(this._aliases[alias], object)
+        const send = async<M extends unknown>(object:M) => this.send(this._aliases[alias], object)
         const sendText = async(text:string) => this.sendText(this._aliases[alias], text)
         
         return {
