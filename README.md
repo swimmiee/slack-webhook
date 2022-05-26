@@ -1,4 +1,4 @@
-# @swimmie/slack-webhook
+# slack-webhook-alias
  Slack Webhook Library with alias for sending Slack notifications to multiple channels
 
 # Installation
@@ -10,7 +10,7 @@
 Simply & Easily text to Slack Channel!
 
 ```typescript
-import SlackBot from "@swimmie/slack-webhook";
+import SlackBot from "slack-webhook-alias";
 const slackBot = new SlackBot({
     'developers': 'https://hooks.slack.com/services/<YOUR_WEBHOOK_URL_1>',
     'designers': 'https://hooks.slack.com/services/<YOUR_WEBHOOK_URL_3>'
@@ -31,6 +31,8 @@ await designerBot.sendText("Hello, Designers!")
 
 # Advanced usage
 ```typescript
+import SlackBot from "slack-webhook-alias";
+
 const slackBot = new SlackBot({
     'developers': 'https://hooks.slack.com/services/<YOUR_WEBHOOK_URL_1>',
     ...
