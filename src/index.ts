@@ -15,4 +15,14 @@ export default class SlackBot<T extends {[key: string]: string}> {
         return axios.post(this._aliases[alias], {text})
     }
 
+    createBot = (alias: keyof T) => {
+        const send = async(object:Object) => this.send(this._aliases[alias], object)
+        const sendText = async(text:string) => this.sendText(this._aliases[alias], text)
+        
+        return {
+            send,
+            sendText
+        }
+    }
+
 }
