@@ -20,7 +20,7 @@ const slackBot = new SlackBot({
 // Set receive channels dynamically (Send text only)
 await slackBot.sendText('developers', "Hello, Developers!");
 await slackBot.send('marketers', {
-    text:"Hello, Developers!"
+    text: "Hello, Developers!"
 });
 
 
