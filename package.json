@@ -1,0 +1,25 @@
+{
+  "name": "@swimmie/slack-webhook",
+  "version": "1.0.0",
+  "description": "Slack Webhook Library with alias for sending Slack notifications to multiple channels",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist && npx tsc",
+    "publish": "npm run build && npm publish"
+  },
+  "keywords": [
+    "slack",
+    "webhook",
+    "alias",
+    "multtiple-channel",
+    "message"
+  ],
+  "author": "swimmie <dannylisa67@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "4.7.2"
+  },
+  "dependencies": {
+    "axios": "0.27.2"
+  }
+}
