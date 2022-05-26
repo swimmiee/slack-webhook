@@ -1,6 +1,6 @@
 {
   "name": "slack-webhook-alias",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Slack Webhook Library with alias for sending Slack notifications to multiple channels",
   "main": "dist/index.js",
   "scripts": {
