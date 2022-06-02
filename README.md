@@ -3,7 +3,7 @@
 
 # Installation
  ```bash
- npm i @swimmie/slack-webhook
+ npm i slack-webhook-alias
  ```
 
 # Quick Usage
