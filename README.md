@@ -13,8 +13,8 @@ Simply & Easily text to Slack Channel!
 import SlackBot from "slack-webhook-alias";
 const slackBot = new SlackBot({
     'developers': 'https://hooks.slack.com/services/<YOUR_WEBHOOK_URL_1>',
-    'designers': 'https://hooks.slack.com/services/<YOUR_WEBHOOK_URL_3>'
-    'marketers': 'https://hooks.slack.com/services/<YOUR_WEBHOOK_URL_2>',
+    'designers': 'https://hooks.slack.com/services/<YOUR_WEBHOOK_URL_2>'
+    'marketers': 'https://hooks.slack.com/services/<YOUR_WEBHOOK_URL_3>',
 })
 
 // Set receive channels dynamically (Send text only)
